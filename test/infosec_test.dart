@@ -1,23 +1,24 @@
-import 'package:flutter/services.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:infosec/infosec.dart';
+// import 'package:flutter/services.dart';
+// import 'package:flutter_test/flutter_test.dart';
+// import 'package:infosec/infosec.dart';
 
-void main() {
-  const MethodChannel channel = MethodChannel('infosec');
 
-  TestWidgetsFlutterBinding.ensureInitialized();
+// void main() {
+//   const MethodChannel channel = MethodChannel('infosec');
 
-  setUp(() {
-    channel.setMockMethodCallHandler((MethodCall methodCall) async {
-      return '42';
-    });
-  });
+//   TestWidgetsFlutterBinding.ensureInitialized();
 
-  tearDown(() {
-    channel.setMockMethodCallHandler(null);
-  });
+//   // setUp(() {
+//   //   channel.setMockMethodCallHandler((MethodCall methodCall) async {
+//   //     return '42';
+//   //   });
+//   // });
 
-  test('getPlatformVersion', () async {
-    expect(await Infosec.platformVersion, '42');
-  });
-}
+//   // tearDown(() {
+//   //   channel.setMockMethodCallHandler(null);
+//   // });
+
+//   // test('getPlatformVersion', () async {
+//   //   expect(await Infosec.platformVersion, '42');
+//   // });
+// }
